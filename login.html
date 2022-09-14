@@ -14,18 +14,18 @@
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="#" class="sign-in-form">
+                <form action="/index.html" class="sign-in-form">
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input required type="text" placeholder="Username" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                        <input required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" placeholder="Password" />
                     </div>
 
-                    <button class="btn-solid" onclick="window.location='index.html';">Login</button>
+                    <button class="btn-solid" type="submit" value="submit">Login</button>
                     <p class="social-text">Or Sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -42,19 +42,19 @@
                         </a>
                     </div>
                 </form>
-                <form action="#" class="sign-up-form">
+                <form action="/index.html" class="sign-up-form">
                     <h2 class="title">Sign up</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input required type="text" placeholder="Username" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" />
+                        <input required type="email" placeholder="Email" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                        <input required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" placeholder="Password" />
                     </div>
                     <input type="submit" class="btn-solid" value="Sign up" />
                     <p class="social-text">Or Sign up with social platforms</p>
@@ -83,7 +83,7 @@
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, ex ratione. Aliquid!
                     </p>
-                    <button class="btn-solid transparent" id="sign-up-btn">
+                    <button class="btn-solid transparent" id="sign-up-btn" type="submit" value="submit">
               Sign up
             </button>
                 </div>
